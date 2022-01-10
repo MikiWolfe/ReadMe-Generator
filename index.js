@@ -63,10 +63,15 @@ inquirer
         name: "email"
     },
     {
+        type: "input",
+        message: "Enter a year for the license",
+        name: "year"
+    },
+    {
         type: "list",
         name: "license",
         message: "Which license would you like to use?",
-        choices: ["MIT", "Apache 2.0", "GPL 3.0", "BSD 3","none"]
+        choices: ["MIT", "Apache 2.0", "GPL 3.0", "BSD 3","None"]
     },
    
 ])
