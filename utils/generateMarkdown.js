@@ -1,13 +1,27 @@
-const mit= "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
-const apache = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
-const gpl = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
-const bsd = "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)"
+const mitBadge= "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+const apacheBadge= "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+const gplBadge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
+const bsdBadge = "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)"
+// choices: ["MIT", "Apache 2.0", "GPL 3.0", "BSD 3","none"]
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
- 
+function renderLicenseBadge(data) {
+  console.log()
+if(data.license === 'MIT') 
+return mitBadge
 
+else if (data.license === "Apache 2.0") 
+  return apacheBadge
+
+else if (data.choices === "GPL 3.0")
+  return gplBadge
+
+else if (data.choices === "BSD 3")
+return bsdBadge
+
+else if (data.license === "")
+return ""
 }
 
 // TODO: Create a function that returns the license link
@@ -24,8 +38,8 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README${badge}
 
-const generateMarkdown = (data) =>
-
+const generateMarkdown = (data) => 
+// console.log(data)
 `# ${data.title}
 
 ## Description: 
@@ -45,7 +59,7 @@ ${data.install}
 ## Usage
 ${data.use}
 ## Licensing
-${data.license}
+${renderLicenseBadge(data)}
 ## Contributors
 ${data.contributors}
 ## Tests
