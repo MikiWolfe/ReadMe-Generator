@@ -1,7 +1,5 @@
 # ReadMe-Generator
-Writing code that creates a readme
-
-
+Writing code that creates a README 
 
 # 09 Node.js Homework: Professional README Generator
 
