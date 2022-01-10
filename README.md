@@ -52,4 +52,4 @@ Link to the deployed site: None.
 Link to the repo: https://github.com/MikiWolfe/ReadMe-Generator
 
 ### Image of application
-Link to a screenshot of the application: Not at this time.
+Link to a screenshot of the application: https://raw.githubusercontent.com/MikiWolfe/ReadMe-Generator/main/github.com_MikiWolfe_ReadMe-Generator.png
