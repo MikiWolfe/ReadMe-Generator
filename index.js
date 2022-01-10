@@ -71,8 +71,8 @@ inquirer
    
 ])
 
-    .then((data) => fs.writeFileSync(`/utils${data.title}.md`, generateMarkdown(data)))
-    .then(() => console.log(`${data.title}.md has been generated.`))
+    .then((data) => fs.writeFileSync('./utils/ReadME', generateMarkdown(data)))
+    .then(() => console.log("ReadME.md has been generated."))
     .catch((err) => console.error(err))
 
 
