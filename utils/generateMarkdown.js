@@ -33,7 +33,7 @@ const generateMarkdown = (data) =>
 `# ${data.title}
 
 ## Description: 
-${data.repo}/n
+Repository name: ${data.repo}
 ${data.description}
 
 ## Table of Contents:
@@ -74,7 +74,7 @@ Link to a screenshot of the application: ${data.image}
 
 ## Questions
 Please reach out if you have any questions about this application:
-GitHub profile: https://github.com/${data.github}.
+GitHub profile: https://github.com/${data.github}
 Please contact: ${data.email} with any questions. 
 `
 

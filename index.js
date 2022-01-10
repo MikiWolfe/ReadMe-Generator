@@ -9,12 +9,12 @@ inquirer
 .prompt([
     {
         type: "input",
-        message: "Please enter a title for your readMe: ",
+        message: "Title for your readMe: ",
         name: "title",
     },
     {
         type: "input",
-        message: "Enter the name of your repo",
+        message: "Title of your GitHub repo",
         name: "repo"
     },
     {
@@ -34,7 +34,7 @@ inquirer
     },
     {
         type: "input",
-        message: "What testing instructions would you like to include?",
+        message: "Any testing instructions?",
         name: "test",
     },
     {
@@ -44,22 +44,22 @@ inquirer
     },
     {
         type: "input",
-        message: "Please enter your GitHub username:",
+        message: "Enter your GitHub username:",
         name: "github"
     },
     {
         type: "input",
-        message: "Please enter the URL for your deployed site:",
+        message: "URL for deployed site:",
         name: "deployed"
     },
     {
         type: "input",
-        message: "Please link an image url if aplicable:",
+        message: "Image url if aplicable:",
         name: "image"
     },
     {
         type: "input",
-        message: "Please enter your business email:",
+        message: "Business email:",
         name: "email"
     },
     {
@@ -71,7 +71,7 @@ inquirer
    
 ])
 
-    .then((data) => fs.writeFileSync(`${data.title}.md`, generateMarkdown(data)))
+    .then((data) => fs.writeFileSync(`/utils${data.title}.md`, generateMarkdown(data)))
     .then(() => console.log(`${data.title}.md has been generated.`))
     .catch((err) => console.error(err))
 
