@@ -1,8 +1,8 @@
-# Title
+# Sample
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description: 
-generates a high quality readme for the user
-Repository name: readme-generator
+This a sample ReadME file that has been generated using this application
+Repository name: Test
 
 ## Table of Contents:
 * [Description](#description)
@@ -13,11 +13,12 @@ Repository name: readme-generator
 * [Questions](#questions)
 
 ## Installation 
-npm i inquierer
+None for this project
 ## Usage
-readme files 
+To make everyones lives simplier
 ## Licensing
-Copyright [yyyy] [name of copyright owner] Permission is hereby granted, free of charge, 
+2023 Jane Doe
+Copyright Permission is hereby granted, free of charge, 
 to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in 
 the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, 
 distribute, sublicense, and/or sell 
@@ -34,17 +35,17 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 SOFTWARE.
 https://opensource.org/licenses/MIT
 ## Contributors
-none
+None 
 ## Tests
-none
+None
 ## Questions
 Please reach out if you have any questions about this application:
-GitHub profile: https://github.com/mikiwolfe
-Please contact: email@gmail.com with any questions. 
+GitHub profile: https://github.com/MikiWolfe
+Please contact: test@test.com with any questions. 
 
 ### Link to Deployed Site
-Link to the deployed site: none
-Link to the repo: https://github.com/mikiwolfe/readme-generator
+Link to the deployed site: www.google.com
+Link to the repo: https://github.com/MikiWolfe/Test
 
 ### Image of application
-Link to a screenshot of the application: none
+Link to a screenshot of the application: None

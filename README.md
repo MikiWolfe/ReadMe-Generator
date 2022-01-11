@@ -1,9 +1,9 @@
 # ReadMe Generator
 
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description: 
 This application generates a readME file using input from the user to curated to the needs of their project. We are using Node and Inquirer to ask the user specific questions and then fill in their responses to key places in the readME. This application is designed to expedite the process of building a high quality ReadME for the user. 
+
 Repository name: ReadMe-Generator
 
 ## Table of Contents:
@@ -19,7 +19,7 @@ In your terminal you will need to ```npm i inquirer``` in order to install inqui
 ## Usage
 Creating high quality ReadMEs using prompts from the user.
 ## Licensing
-Copyright 2023 MikiWolfe
+Copyright 2023 Mikayla Bruce
 
 Permission is hereby granted, free of charge, 
 to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in 
