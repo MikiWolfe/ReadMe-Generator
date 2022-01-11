@@ -1,3 +1,51 @@
+function renderLicenseYear(data) {
+  if(data.license ==="None") 
+    return "";
+  else if(data.year){
+    let year = data.year;
+     return year
+    }
+     else (data.year ==="")
+     return ""
+  }
+  
+  function renderLicenseAuthor(data) {
+    if(data.owner ==="None") 
+      return "";
+    else if(data.owner){
+      let owner = data.owner;
+       return owner
+      }
+       else (data.owner ==="")
+       return ""
+    }
+
+function renderLicenseBadge(data) {
+  console.log("data", data)
+  if (data.license === "MIT") return mitBadge;
+  else if (data.license === "Apache 2.0") return apacheBadge;
+  else if (data.choices === "GPL 3.0") return gplBadge;
+  else if (data.choices === "BSD 3") return bsdBadge;
+  else if (data.license === "None") return "";
+}
+
+function renderLicenseLink(data) {
+  if (data.license === "MIT") return mitURL;
+  else if (data.license === "Apache 2.0") return apacheURL;
+  else if (data.choices === "GPL 3.0") return gplURL;
+  else if (data.choices === "BSD 3") return bsdURL;
+  else if (data.license === "None") return "";
+}
+
+function renderLicenseSection(data) {
+  if (data.license === "MIT") return mitBlurb;
+  else if (data.license === "Apache 2.0") return apacheBlurb;
+  else if (data.choices === "GPL 3.0") return gplBlurb;
+  else if (data.choices === "BSD 3") return bsdBlurb;
+  else if (data.license === "None") return "";
+}
+
+
 const mitBadge =
   "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
 const apacheBadge =
@@ -63,36 +111,7 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSE
 WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE 
 USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.`;
 
-// function renderLicenseYearAuthor(data) {
-//   if(data.year !==""){
-//     Text = "Copyright:" + data.year + data.github
-//     }
-// }
-// ${renderLicenseYearAuthor(data)}
 
-function renderLicenseBadge(data) {
-  if (data.license === "MIT") return mitBadge;
-  else if (data.license === "Apache 2.0") return apacheBadge;
-  else if (data.choices === "GPL 3.0") return gplBadge;
-  else if (data.choices === "BSD 3") return bsdBadge;
-  else if (data.license === "None") return "";
-}
-
-function renderLicenseLink(data) {
-  if (data.license === "MIT") return mitURL;
-  else if (data.license === "Apache 2.0") return apacheURL;
-  else if (data.choices === "GPL 3.0") return gplURL;
-  else if (data.choices === "BSD 3") return bsdURL;
-  else if (data.license === "None") return "";
-}
-
-function renderLicenseSection(data) {
-  if (data.license === "MIT") return mitBlurb;
-  else if (data.license === "Apache 2.0") return apacheBlurb;
-  else if (data.choices === "GPL 3.0") return gplBlurb;
-  else if (data.choices === "BSD 3") return bsdBlurb;
-  else if (data.license === "None") return "";
-}
 
 const generateMarkdown = (data) =>
   `# ${data.title}
@@ -114,6 +133,7 @@ ${data.install}
 ## Usage
 ${data.use}
 ## Licensing
+${renderLicenseYear(data)} ${renderLicenseAuthor(data)}
 ${renderLicenseSection(data)}
 ${renderLicenseLink(data)}
 ## Contributors

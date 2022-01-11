@@ -12,60 +12,65 @@ inquirer
         message: "Title for your readMe: ",
         name: "title",
     },
-    {
-        type: "input",
-        message: "Title of your GitHub repo",
-        name: "repo"
-    },
-    {
-        type: "input",
-        message: "Describe your application:",
-        name: "description",
-    },
-    {
-        type: "input",
-        message: "Instructions for installation:",
-        name: "install",
-    },
-    {
-        type: "input",
-        message: "Usages of application:",
-        name: "use",
-    },
-    {
-        type: "input",
-        message: "Any testing instructions?",
-        name: "test",
-    },
-    {
-        type: "input",
-        message:"usernames of contributors:",
-        name: "contributors",
-    },
-    {
-        type: "input",
-        message: "Enter your GitHub username:",
-        name: "github"
-    },
-    {
-        type: "input",
-        message: "URL for deployed site:",
-        name: "deployed"
-    },
-    {
-        type: "input",
-        message: "Image url if aplicable:",
-        name: "image"
-    },
-    {
-        type: "input",
-        message: "Business email:",
-        name: "email"
-    },
+    // {
+    //     type: "input",
+    //     message: "Title of your GitHub repo",
+    //     name: "repo"
+    // },
+    // {
+    //     type: "input",
+    //     message: "Describe your application:",
+    //     name: "description",
+    // },
+    // {
+    //     type: "input",
+    //     message: "Instructions for installation:",
+    //     name: "install",
+    // },
+    // {
+    //     type: "input",
+    //     message: "Usages of application:",
+    //     name: "use",
+    // },
+    // {
+    //     type: "input",
+    //     message: "Any testing instructions?",
+    //     name: "test",
+    // },
+    // {
+    //     type: "input",
+    //     message:"usernames of contributors:",
+    //     name: "contributors",
+    // },
+    // {
+    //     type: "input",
+    //     message: "Enter your GitHub username:",
+    //     name: "github"
+    // },
+        // {
+    //     type: "input",
+    //     message: "URL for deployed site:",
+    //     name: "deployed"
+    // },
+    // {
+    //     type: "input",
+    //     message: "Image url if aplicable:",
+    //     name: "image"
+    // },
+    // {
+    //     type: "input",
+    //     message: "Business email:",
+    //     name: "email"
+    // },
     {
         type: "input",
         message: "Enter a year for the license",
         name: "year"
+    },
+    {
+        type: "input",
+        message: "enter a name for the license",
+        name: "owner"
     },
     {
         type: "list",
