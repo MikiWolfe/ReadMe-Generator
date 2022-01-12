@@ -49,6 +49,8 @@ Please contact: email@email.com with any questions.
 ### Link to Deployed Site
 Link to the deployed site: None.
 
+Link to the walk through video:  https://drive.google.com/file/d/1FA8JQnc_pFViHKALZS1_i5_Skc9mhsAy/view
+
 Link to the repo: https://github.com/MikiWolfe/ReadMe-Generator
 
 ### Image of application
