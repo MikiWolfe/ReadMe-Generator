@@ -1,8 +1,7 @@
 const inquirer =require('inquirer');
-const Choice = require('inquirer/lib/objects/choice');
 const fs =  require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
-const { Cipher } = require('crypto');
+
 
 const questions = 
 inquirer
@@ -39,8 +38,13 @@ inquirer
     },
     {
         type: "input",
-        message:"usernames of contributors:",
+        message:"Usernames of contributors:",
         name: "contributors",
+    },
+    {
+        type: "input",
+        message: "Please list which technologies you used to create this application:",
+        name: "technology"
     },
     {
         type: "input",
@@ -82,7 +86,7 @@ inquirer
 ])
     .then((data) => fs.writeFileSync(`./utils/${data.title}.md`, generateMarkdown(data)))
     .then(() => console.log("ReadME has been generated."))
-    .catch((err) => console.error(err))
+    .catch((err) => console.error(err));
 
 
 

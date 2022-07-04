@@ -126,6 +126,7 @@ Repository name: ${data.repo}
 * [Licensing](#licensing)
 * [Contributors](#contributors)
 * [Tests](#tests)
+* [Technology](#Technology)
 * [Questions](#questions)
 
 ## Installation 
@@ -140,6 +141,9 @@ ${renderLicenseLink(data)}
 ${data.contributors}
 ## Tests
 ${data.test}
+## Technology 
+List of technologies used: 
+${data.technology}
 ## Questions
 Please reach out if you have any questions about this application:
 GitHub profile: https://github.com/${data.github}
